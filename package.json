@@ -2,12 +2,14 @@
   "name": "Charik",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
+    "dev": " tsx watch src/index.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "test":  "node test-runner.js"
   },
   "dependencies": {
     "@hono/node-server": "^1.15.0",
+    "dotenv": "^17.2.0",
     "hono": "^4.8.4"
   },
   "devDependencies": {
